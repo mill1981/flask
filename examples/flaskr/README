@@ -36,3 +36,14 @@
 
       You betcha.  Run `python setup.py test` to see
       the tests pass.
+
+    ~ Run it in the Docker Container
+
+      1. Build the image
+
+        docker build --rm -t 'flaskr:0.0.1' .
+
+      2. Run flaskr
+
+        docker run -d -it -p 5000:5000 flaskr:0.0.1
+
